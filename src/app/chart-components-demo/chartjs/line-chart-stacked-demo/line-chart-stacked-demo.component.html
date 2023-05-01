@@ -1,0 +1,19 @@
+<h2>LineChartStacked(As DualAxisChart in Highcharts)</h2>
+<p>The LineChartStacked is the extension of a basic area chart to display the evolution of the value of several groups on the same graphic.</p>
+<div class="chart-container">
+  <canvas baseChart
+          class="chart"
+          [data]="firstChartData"
+          [type]="chartType"
+          [options]="chartOptions"
+  ></canvas>
+</div>
+
+<div class="chart-container">
+  <canvas baseChart
+          class="chart"
+          [data]="secondChartData"
+          [type]="chartType"
+          [options]="chartOptions"
+  ></canvas>
+</div>

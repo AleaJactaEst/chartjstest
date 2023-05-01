@@ -1,0 +1,38 @@
+.app-wrapper {
+  padding-top: 1px;
+
+  nav {
+    width: 250px;
+    border-right: 1px solid #ccc;
+    min-height: 100vh;
+    position: fixed;
+    padding-left: 15px;
+
+    h4 {
+      font-size: 24px;
+      margin: 10px 0;
+      font-weight: 400;
+      line-height: 1.1;
+    }
+  }
+
+  .main-content {
+    margin-left: 250px;
+    padding: 0 50px;
+  }
+
+  ::ng-deep .parent {
+    border: 1px solid red;
+    height: 200px;
+    width: 500px;
+    position: relative;
+  }
+}
+
+:host ::ng-deep .chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  max-height: 900px;
+}
